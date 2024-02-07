@@ -1,0 +1,486 @@
+/* animations */
+.animation {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: all 0.7s ease-in;
+    transition-delay: 0.3s;
+}
+.scroll-animation {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* html body */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url("./media/skylinbg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+h3,
+p,
+h1 {
+    color: white;
+}
+
+/* set z-index(layers) */
+section,
+footer {
+    position: relative;
+    z-index: 1;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+.video-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    display: none;
+}
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.contentOverlay {
+    position: relative;
+    width: 100%;
+    background: rgb(86, 122, 185);
+    background: linear-gradient(180deg, rgba(18, 34, 31, 0.911) 45%, rgba(255, 255, 255, 0.904) 100%);
+    padding-bottom: 10px;
+}
+
+/* offcanvas navigation / mobile */
+.offcanvas {
+    background-color: rgb(27, 27, 54);
+}
+.offcanvas li a {
+    color: rgb(102, 102, 102);
+}
+.offcanvas li a:hover {
+    color: rgb(255, 255, 255);
+}
+#closeButton {
+    margin-left: 90%;
+}
+
+/* navigation */
+nav {
+    background-color: rgba(255, 255, 255, 0.048);
+    position: relative;
+}
+#navbar-brand-container {
+    height: 100px;
+    background-color: rgba(41, 84, 120, 0.409);
+    padding: 50px 8px 10px 8px;
+}
+.navbar-brand {
+    margin: 0 auto;
+    color: white;
+}
+nav .navbar-social {
+    margin-left: auto;
+    margin-right: 15px;
+    display: none;
+}
+nav .navbar-social ul {
+    list-style-type: none;
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler-icon {
+    background-image: url("./media/bars-solid.svg");
+}
+
+/* sidebar/social links */
+aside {
+    display: none;
+}
+
+/* clock */
+.clock {
+    display: flex;
+    width: 95%;
+    height: 48%;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #a1a0a0;
+    border-style: dotted;
+    border-radius: 50%;
+}
+.clock .hour,
+.clock .min,
+.clock .sec {
+    position: absolute;
+}
+.clock .hour,
+.hr {
+    width: 160px;
+    height: 6px;
+}
+.clock .min,
+.mn {
+    width: 190px;
+    height: 190px;
+}
+.clock .sec,
+.sc {
+    width: 230px;
+    height: 6px;
+}
+.hr,
+.mn,
+.sc {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    border-radius: 50%;
+}
+.hr:before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 80px;
+    background: #e5e5e5;
+    z-index: 9;
+    border-radius: 6px 6px 0 0;
+}
+.sc:before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 125px;
+    background: #e5e5e5;
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+}
+
+/* all sections */
+section,
+footer {
+    text-align: center;
+}
+
+/* coming soon section */
+.comingSoon {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.comingSoon h3 {
+    font-weight: 100;
+    margin: 0;
+}
+.comingSoon h3:last-of-type {
+    display: none;
+}
+.comingSoon h1 {
+    margin-bottom: 25px;
+    font-size: 55px;
+}
+.banner {
+    text-align: center;
+}
+
+/* down arrow stay tuned */
+.stay-tuned {
+    margin: 25px 0 150px 0;
+}
+.stay-tuned h3 {
+    font-weight: 100;
+    margin: 30px 0 60px 0;
+    letter-spacing: 6px;
+}
+.stay-tuned i {
+    margin-bottom: 25px;
+    color: white;
+    border: solid 1.5px white;
+    padding: 35px 20px;
+}
+
+/* about */
+.about {
+    width: 90%;
+    margin: 40px auto 40PX;
+}
+.about h2 {
+    letter-spacing: 8px;
+    color: rgba(18, 34, 31, 0.849);
+    font-weight: 400;
+    margin: 20px 0;
+}
+.about p {
+    margin: 10px 25px;
+    color: rgba(18, 34, 31, 0.849);
+    line-height: 35px;
+}
+
+/* subscribe */
+.subscribe {
+    width: 80%;
+    margin: 40px auto 40PX;
+}
+.subscribe h2 {
+    color: rgba(18, 34, 31, 0.849);
+    margin: 40px 40px;
+    font-size: 20px;
+}
+.subscribe form {
+    text-align: left;
+}
+.subscribe form input {
+    padding: 15px;
+    border: solid 1px black;
+}
+.subscribe form button {
+    width: 100%;
+    background-color: rgba(18, 34, 31, 0.849);
+    border: none;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+/* content social icons */
+.content-social {
+    margin: 90px 0 0 0;
+}
+.content-social ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.content-social ul li {
+    width: 35px;
+    color: black;
+}
+.content-social ul li:nth-of-type(2) {
+    margin: 0 25px;
+}
+
+/* footer */
+footer {
+    padding-top: 30px;
+    background-color: white;
+}
+footer p {
+    color: black;
+    margin: 10px 0;
+}
+footer i {
+    background-color: rgba(18, 34, 31, 0.849);
+    color: white;
+    padding: 25px 20px;
+    margin-top: 15px;
+}
+
+/* media queries */
+/* Medium devices and up (768px and up) */
+@media only screen and (min-width: 768px) {
+    /* animations */
+    .animation {
+        transition-delay: 0.5s;
+    }
+    
+    /* removed animations */
+    .banner h3, .stay-tuned{
+        opacity: 1;
+        transform: none;
+    }
+    
+    /* video container */
+    .video-container {
+        display: block;
+    }
+
+    /* sidebar */
+    aside {
+        display: block;
+        grid-area: aside;
+        z-index: 3;
+        position: fixed;
+        top: 400px;
+        right: 50px;
+    }
+    aside ul {
+        list-style: none;
+    }
+    aside ul li:nth-of-type(2) {
+        margin: 25px 0;
+    }
+    aside svg {
+        width: 30px;
+    }
+
+    /* nav */
+    nav {
+        background-color: rgba(255, 255, 255, 0);
+    }
+    nav .container-fluid {
+        width: 90%;
+    }
+    .navbar-brand {
+        font-size: 30px;
+        font-weight: 100;
+        letter-spacing: 3px;
+    }
+    #navbar-brand-container {
+        padding: 80px 30px 70px 30px;
+    }
+    .navbar-nav .nav-link {
+        color: white;
+    }
+
+    /* coming soon section */
+    .comingSoon {
+        justify-content: center;
+        margin-top: 60px;
+    }
+    .comingSoon h1 {
+        margin: 50px auto;
+        font-size: 90px;
+        width: 80%;
+        letter-spacing: 12px;
+    }
+    .comingSoon h3:last-of-type {
+        display: block;
+    }
+
+    /* banner */
+    .banner {
+        margin-bottom: 0;
+    }
+
+    /* clock */
+    .clock {
+        position: absolute;
+        width: 55%;
+        height: 80%;
+    }
+    .hr:before {
+        height: 275px;
+    }
+    .sc:before {
+        height: 450px;
+    }
+
+    /* down arrow stay tuned section */
+    .stay-tuned {
+        margin-bottom: 700px;
+    }
+    .stay-tuned i {
+        padding: 30px 25px;
+        font-size: 20px;
+    }
+    .stay-tuned i:hover {
+        background-color: white;
+        color: #000000;
+        cursor: pointer;
+    }
+    .stay-tuned h3 {
+        display: none;
+    }
+
+     /* about and subscribe widths */
+     .about,
+     .subscribe {
+         width: 30%;
+     }
+ 
+
+    /* about section */
+    .about {
+        margin-bottom: 100px;
+    }
+    .about h2 {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+    .about p {
+        margin-top: 50px;
+        font-size: 22px;
+    }
+
+    /* subscribe section */
+    .subscribe h2 {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        font-size: 28px;
+        font-weight: 500;
+    }
+    form label {
+        font-size: 24px;
+    }
+    .form-input-container {
+        display: flex;
+    }
+    .form-input-container input {
+        flex: 2;
+        margin-right: 10px;
+    }
+    .subscribe form button {
+        flex: 1;
+        margin-top: 0;
+        font-size: 24px;
+    }
+    .subscribe form button:hover {
+        background-color: white;
+        color: rgb(4, 24, 10);
+        border: black solid 1px;
+    }
+    .subscribe form input:hover {
+        border: black solid 4px;
+    }
+
+    /* social media icons section */
+    .content-social {
+        margin-bottom: 250px;
+    }
+    .content-social svg {
+        width: 30px;
+    }
+
+    /* footer */
+    footer p {
+        width: 275px;
+        font-size: 20px;
+    }
+    .order-1 {
+        text-align: end;
+    }
+    .order-2 {
+        text-align: left;
+    }
+}

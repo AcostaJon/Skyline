@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- title -->
+  <title>Skyline - Coming Soon Landing Page</title>
+  <!-- icon -->
+  <link rel="icon" type="image/x-icon" href="./media/logo.svg">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/1637efd201.js" crossorigin="anonymous"></script>
+  <!-- my styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- video - Play only on tabet screen sizes and up -->
+  <div class="video-container" id="myVideo">
+    <video class="object-fit-cover" loop autoplay muted>
+      <source src="./media/skyline.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- content -->
+  <div class="contentOverlay">
+    <!-- Navigation Section  -->
+    <nav class="navbar fixed-top align-items-start p-0">
+      <div class="container-fluid">
+        <div class="navbar-brand-container" id="navbar-brand-container">
+          <a class="navbar-brand" href="#">Skyline.</a>
+        </div>
+        <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0  d-none d-md-flex flex-row">
+          <li class="nav-item me-5">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Subscribe</a>
+          </li>
+        </ul>
+        <!-- Offcanvas navbar/ mobile -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-body pt-5 ">
+            <div data-bs-theme="dark">
+              <button type="button" id="closeButton" class="btn-close" aria-label="Close"
+                data-bs-dismiss="offcanvas"></button>
+            </div>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 text-center">
+              <li class="nav-item mb-3">
+                <a class="nav-link " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Subscribe</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Sidebar social links -->
+    <aside class="sidebar-social">
+      <ul>
+        <li>
+          <a href="https://www.facebook.com" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path fill="#FFFFFF"
+                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+              <path opacity="1" fill="#FFFFFF"
+                d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path fill="#FFFFFF"
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <!-- Coming Soon -->
+    <section class="comingSoon">
+      <div class="banner">
+        <h3 class="animation">
+          OUR NEW SITE IS
+        </h3>
+        <h1>
+          COMING SOON
+        </h1>
+        <h3>STAY TUNED!</h3>
+      </div>
+
+      <div class="clock">
+        <div class="clock">
+
+          <div class="hour">
+            <div class="hr" id="hr"></div>
+          </div>
+
+          <div class="min">
+            <div class="mn" id="mn"></div>
+          </div>
+
+          <div class="sec">
+            <div class="sc" id="sc"></div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Down Arrow -->
+    <section class="stay-tuned animation">
+      <h3>STAY TUNED!</h3>
+      <i class="fa-solid fa-arrow-down-long fa-xl"></i>
+    </section>
+    <!-- About Section -->
+    <section class="about animation">
+      <h2>ABOUT SKYLINE</h2>
+      <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy.\
+        Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great
+        place
+        for you to tell a story and let your users know a little more about you.</p>
+    </section>
+    <!-- ubscribe Section  -->
+    <section class="subscribe">
+      <h2 class="animation">Subscribe to be the first to know about our launch</h2>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email *</label>
+          <div class="form-input-container">
+            <input type="email" placeholder="Enter your email here*" class="form-control" id="exampleInputEmail1"
+              aria-describedby="emailHelp">
+            <button type="submit" class="btn btn-primary mt-lg-none">Subscribe Now</button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <!-- Social media icons Section -->
+    <section class="content-social animation">
+      <!-- social media links -->
+      <ul>
+        <!-- facebook -->
+        <li>
+          <a href="https://www.facebook.com" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+            </svg>
+          </a>
+        </li>
+        <!-- twitter -->
+        <li>
+          <a href="https://www.twitter.com" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+              <path opacity="1"
+                d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z" />
+            </svg>
+          </a>
+        </li>
+        <!-- instagram -->
+        <li>
+          <a href="https://www.instagram.com" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- footer -->
+  <footer class="d-lg-flex flex-nowrap justify-content-center align-items-center p-0 ">
+    <p>
+      &copy; 2035 by Skyline
+    </p>
+    <p class="order-5 ">
+      Powered and secured by <a
+        href="https://www.wix.com/website-template/view/html/1896?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button&esi=e4fc10d0-8505-4f39-a505-023a45571db9">Wix</a>
+    </p>
+    <i class="fa-solid fa-arrow-up-long order-2 mx-lg-4 mt-lg-0 mb-lg-2"></i>
+  </footer>
+
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- my js -->
+  <script src="index.js"></script>
+</body>
+
+</html>
